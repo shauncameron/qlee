@@ -1,0 +1,19 @@
+ul #livemessages {
+    all: initial;
+}
+
+ul #livemessages {
+    height:200px;
+    width:18%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#livemessages {
+    overflow-y: scroll;
+    height: 400px;
+    user-select: none;
+    -moz-user-select: none;
+    background: #cfcfc4;
+    border: 5px solid #cfcfc4;
+}

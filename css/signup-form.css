@@ -1,0 +1,59 @@
+:root {
+    font-family: Trebuchet MS, serif;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h2 {
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 32px;
+}
+
+select {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.submit-form-input {
+    float: right;
+}
+
+input[type=submit] {
+    width: 45%;
+    background-color: rgb(114, 137, 218);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(78, 93, 148);
+}
+
+.submit-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 450px;
+    height: 460px;
+    margin: 5% auto 0;
+}

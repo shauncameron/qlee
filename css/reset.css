@@ -1,0 +1,17 @@
+/*
+- reset.css
+ */
+
+:root {
+    font: 16px Trebuchet MS, serif;
+}
+
+body,
+body * {
+    margin: unset;
+    box-string: unset;
+    padding: unset;
+    foot-size: unset;
+    color: unset;
+    text-decoration: unset;
+}

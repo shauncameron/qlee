@@ -1,0 +1,86 @@
+:root {
+    font-family: Trebuchet MS, serif;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 125%
+}
+
+h2, p:not(:last-child) { margin-bottom: 10px; }
+
+h3 {
+    font-size: 110%;
+}
+
+body {
+    display: grid;
+}
+
+article {
+    /* Font */
+    color: rgb(66, 66, 66);
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr; /* Start and end of column */
+    height: 90%;
+    padding: 10px 10px;
+    border: 5px solid #cfcfc4;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-inline: auto;
+}
+
+articlemeta-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.am-title {
+    font-size: 160%;
+}
+
+.am-author {
+    font-size: 110%;
+}
+
+.am-created-at {
+    font-size: 110%;
+}
+
+article * { grid-column: start / end; } /*article children*/
+
+/* Media query */
+
+@media (max-width: 8.5in) {
+    article { grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr} /* Resizes on less than 8.5in */
+}
+
+.remark-field {
+    margin-top: 10px;
+}
+
+.remark-codeblock {
+    background-color: #cfcfc4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 15px solid #cfcfc4;
+    font-family: monospace;
+}
+
+.remark-code {
+    background-color: #cfcfc4;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #cfcfc4;
+    font-family: monospace;
+}
