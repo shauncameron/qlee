@@ -1,0 +1,50 @@
+.error-alert {
+    padding: 20px;
+    background-color: rgb(235, 39, 0);
+    color: white;
+    width: 300px;
+    float: center;
+    margin: 10px auto;
+}
+
+.info-alert {
+    padding: 20px;
+    background-color: rgb(58, 137, 201);
+    color: white;
+    width: 300px;
+    float: center;
+    margin: 10px auto;
+}
+
+.warn-alert {
+    padding: 20px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    width: 300px;
+    float: center;
+    margin: 10px auto;
+}
+
+.success-alert {
+    padding: 20px;
+    background-color: rgb(0, 194, 87); /* Pastel green */
+    color: white;
+    width: 300px;
+    float: center;
+    margin: 10px auto;
+}
+
+.close-alert-button {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.close-alert-button:hover {
+    color: black;
+}
