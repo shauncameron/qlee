@@ -17,21 +17,26 @@ function makeForumPost($title, $author, $username, $created, $content) {
     return $string;
 }
 
+function curlGetReq($url) {
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+    $result = curl_exec($curl);
+    curl_close($curl);
+
+    return $result;
+}
+
 function getRemarkAPI($string) {
 
     // cURL is much faster than `get_file_contents` so it's used to call remark API
     // This is not the file for remark API but I might make it more accessible so need to add API tokens
 
-    $apitoken = "0x=m|Z%C2%AC/%22GhZk@9_i%22Eb`Wh^dV7eh{%C2%A3vY]";
-
+    $apitoken = '0xS=&aDm$jx9f`e&Yht?yJ07}g1HTJ3oxo';
+    $apitoken = urlencode($apitoken);
     $string = urlencode($string);
-
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, 'http://py.libnexus.tech/api/remark?key='.$apitoken.'&string='.$string);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
-    $result = curl_exec($curl);
-    curl_close($curl);
+    $result = curlGetReq('http://py.libnexus.tech/api/remark?key='.$apitoken.'&string='.$string);
 
     return $result;
 }
